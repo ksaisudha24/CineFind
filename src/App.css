@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    width: 100%;
+    margin: 2.6em auto 1.3em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid {
+    display: grid;
+    margin-left: .5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.7em;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-container {
+    background-color: black;
+    transition: transform 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.card-container:hover {
+    transform: scale(1.15);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body {
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.pagination-button {
+    border: none;
+    border-radius: 50%;
+    margin-right: 2em;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.pagination-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.next {
+    margin-right: 1rem;
+}
+
+.previous {
+    margin-left: 1rem;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.brand {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.toggle-btn {
+    font-size: 1.5rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #555;
+}
+
+.form-control {
+    width: 300px;
+    max-width: 100%;
+}
+
+.btn {
+    margin-left: 1rem;
+}
+
+.modal-dialog {
+    max-width: 43.75rem;
+}
+
+.no-movies-display {
+    color: white;
+    margin: 2em;
 }
