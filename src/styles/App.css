@@ -9,6 +9,37 @@ body {
     background-color: black;
 }
 
+.navbar {
+    background-color: #333;
+}
+
+.brand {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.toggle-btn {
+    font-size: 1.5rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #555;
+}
+
+.form-control {
+    width: 18.75rem;
+    max-width: 100%;
+}
+
 .container {
     width: 100%;
     margin: 2.6em auto 1.3em;
@@ -64,37 +95,6 @@ body {
 
 .previous {
     margin-left: 1rem;
-}
-
-.navbar {
-    background-color: #333;
-}
-
-.brand {
-    font-size: 1.5rem;
-    margin-right: 2rem;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-.toggle-btn {
-    font-size: 1.5rem;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.toggle-btn:hover {
-    background-color: #555;
-}
-
-.form-control {
-    width: 18.75rem;
-    max-width: 100%;
 }
 
 .btn {

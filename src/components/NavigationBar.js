@@ -1,7 +1,7 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
-
-import FormContainer from "./FormContainer";
 import React from "react";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import FormContainer from "./FormContainer";
+import "../styles/NavigationBar.css";
 
 const NavigationBar = (props) => {
   return (

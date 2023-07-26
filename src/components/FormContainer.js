@@ -1,6 +1,6 @@
-import { Form, FormControl } from "react-bootstrap";
-
 import React from "react";
+import { Form, FormControl } from "react-bootstrap";
+import "../styles/NavigationBar.css";
 
 const FormContainer = (props) => {
   const onSubmitHandler = (e) => {

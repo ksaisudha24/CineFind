@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
+
+import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+
 import Movies from "./components/Movies";
 import NavigationBar from "./components/NavigationBar";
-import axios from "axios";
+
+import "./styles/App.css";
 
 const BACKEND_URL = "https://cinefind.onrender.com";
 

@@ -1,7 +1,7 @@
 import React from "react";
-import "../App.css";
-import MovieBox from "./MovieBox";
 import { Container } from "react-bootstrap";
+import MovieBox from "./MovieBox";
+import "../styles/Movies.css";
 
 const Movies = (props) => {
   return (

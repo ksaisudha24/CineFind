@@ -1,6 +1,6 @@
-import { Button, Modal } from "react-bootstrap";
-
 import React from "react";
+import { Button, Modal } from "react-bootstrap";
+import "../styles/NavigationBar.css";
 
 const API_IMG = "https://image.tmdb.org/t/p/w500/";
 
