@@ -37,7 +37,7 @@ function App() {
         console.log(e);
       }
     };
-    fetchMovies();
+      fetchMovies();
   }, [currentPage, query]);
 
   const changeHandler = (e) => {
@@ -54,7 +54,10 @@ function App() {
 
   return (
     <>
-      <NavigationBar query={query} onChangeHandler={changeHandler} />
+      <NavigationBar
+        query={query}
+        onChangeHandler={changeHandler}
+      />
       <Movies
         movies={movies}
         query={query}

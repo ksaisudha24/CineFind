@@ -37,13 +37,7 @@ app.get('/api/search', async (req, res) => {
       axios.get(genreUrl),
     ]);
 
-    const movieNameResults = movieNameResponse.data.results;
     const genreList = genreResponse.data.genres;
-
-    // Check if the search term matches any movie name
-    const moviesByMovieName = movieNameResults.filter((movie) =>
-      movie.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
 
     // Check if the search term matches any genre name
     const matchingGenres = genreList.filter((genre) =>

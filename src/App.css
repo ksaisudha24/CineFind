@@ -25,6 +25,7 @@ body {
 .card-container {
     background-color: black;
     transition: transform 0.3s;
+    max-width: 16.6rem;
 }
 
 .card-container:hover {
@@ -43,8 +44,8 @@ body {
     background-color: #007bff;
     color: white;
     font-size: 1.2rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +93,7 @@ body {
 }
 
 .form-control {
-    width: 300px;
+    width: 18.75rem;
     max-width: 100%;
 }
 
@@ -101,7 +102,7 @@ body {
 }
 
 .modal-dialog {
-    max-width: 43.75rem;
+    max-width: 44rem;
 }
 
 .no-movies-display {

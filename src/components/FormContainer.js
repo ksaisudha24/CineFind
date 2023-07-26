@@ -5,7 +5,7 @@ import React from "react";
 const FormContainer = (props) => {
   return (
     <Form
-      className="d-flex"
+      className="d-flex justify-content-end"
       autoComplete="off"
     >
       <FormControl
