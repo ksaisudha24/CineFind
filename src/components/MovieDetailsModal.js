@@ -19,10 +19,8 @@ const MovieDetailsModal = (props) => {
           alt="Movie Poster"
         />
         <h3>{movieDetails.title}</h3>
-        <h4>IMDb: {movieDetails.vote_average}</h4>
+        <h5>IMDb: {movieDetails.vote_average}</h5>
         <h5>Release Date: {movieDetails.release_date}</h5>
-        <br></br>
-        <h6>Overview</h6>
         <p>{movieDetails.overview}</p>
       </Modal.Body>
       <Modal.Footer>
