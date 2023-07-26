@@ -7,7 +7,7 @@ const API_IMG = "https://image.tmdb.org/t/p/w500/";
 const MovieDetailsModal = (props) => {
   const movieDetails = props.movieDetails;
   return (
-    <Modal show={props.show} onHide={props.handleClose}>
+    <Modal show={props.show} onHide={props.handleClose} centered>
       <Modal.Header closeButton>
         <Modal.Title></Modal.Title>
       </Modal.Header>
