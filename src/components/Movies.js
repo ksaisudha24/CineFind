@@ -1,13 +1,9 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import MovieBox from "./MovieBox";
 import { Container } from "react-bootstrap";
 
 const Movies = (props) => {
-  console.log(props.query);
-  console.log(props.currentPage);
-
   return (
     <>
       <div>

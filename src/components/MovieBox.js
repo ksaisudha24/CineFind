@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import '../App.css';
-import "bootstrap/dist/css/bootstrap.min.css";
 import MovieDetailsModal from "./MovieDetailsModal";
 
 const API_IMG = "https://image.tmdb.org/t/p/w500/";
