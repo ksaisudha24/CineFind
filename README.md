@@ -1,4 +1,5 @@
 # CineFind🔍 - Movie Search Application
+
 CineFind is a movie search application that allows users to search for movies based on their names or genres using The Movie Database (TMDB) API.
 Try CineFind at: [Live Demo]( https://cinefind-movie.netlify.app/)
 
@@ -60,23 +61,31 @@ Before running the application, make sure you have the following installed:
 ## Usage
 
 1. Upon opening the application, you will see trending movies on the home page.
+2. You can click on View More button to view the movie details.
 
-2. To search for movies, enter the name or genre of the movie in the search bar. The search results will be displayed, and you can navigate through the results using the pagination buttons.
+3. To search for movies, enter the name or genre of the movie in the search bar. The search results will be displayed, and you can navigate through the results using the pagination buttons.
 
-3. If no movies or genres match the search query, a message will be displayed indicating that no results were found. You can try different keywords to refine your search.
+4. If no movies or genres match the search query, a message will be displayed indicating that no results were found. You can try different keywords to refine your search.
 
 ## Demo
 Try out the deployed project at: https://cinefind-movie.netlify.app/ \
 Backend is deployed on render at: https://cinefind.onrender.com/ \
-Access it by using https://cinefind.onrender.com/api/trending or https://cinefind.onrender.com/api/search?query={query}
+Make API calls using: https://cinefind.onrender.com/api/trending or https://cinefind.onrender.com/api/search?query={query}
 
 
 ## Screenshots
-![img2](https://github.com/ksaisudha24/CineFind/assets/68504200/c269cb0d-b94d-49a6-9b3d-99b2c1857dc2)
-![img3](https://github.com/ksaisudha24/CineFind/assets/68504200/2e2534a5-1209-4496-ad1a-7f1a19f203b7)
-![img4](https://github.com/ksaisudha24/CineFind/assets/68504200/b774df63-cf8f-4181-adbe-e0d55b67f1ab)
-![img5](https://github.com/ksaisudha24/CineFind/assets/68504200/85173280-dd76-4feb-8b06-08bfa94a0a26)
-![img6](https://github.com/ksaisudha24/CineFind/assets/68504200/6f42d3f1-4750-4e5f-8982-9f1f5e6cd49f)
+#### Homepage
+![homepage](https://github.com/ksaisudha24/CineFind/assets/68504200/c269cb0d-b94d-49a6-9b3d-99b2c1857dc2)
+##### Hovering over the movies
+![hovering](https://github.com/ksaisudha24/CineFind/assets/68504200/2e2534a5-1209-4496-ad1a-7f1a19f203b7)
+#### Previous and next buttons (Pagination)
+![pagination](https://github.com/ksaisudha24/CineFind/assets/68504200/b774df63-cf8f-4181-adbe-e0d55b67f1ab)
+#### Searching a movie
+![search](https://github.com/ksaisudha24/CineFind/assets/68504200/85173280-dd76-4feb-8b06-08bfa94a0a26)
+#### No search results
+![noresult](https://github.com/ksaisudha24/CineFind/assets/68504200/aaf12a2b-b627-4eea-8268-c9f2c71cbb18)
+#### Responsiveness on smaller devices
+![responsiveness](https://github.com/ksaisudha24/CineFind/assets/68504200/6f42d3f1-4750-4e5f-8982-9f1f5e6cd49f)
 
 ## Credits
 
