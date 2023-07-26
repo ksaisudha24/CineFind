@@ -3,10 +3,14 @@ import { Form, FormControl } from "react-bootstrap";
 import React from "react";
 
 const FormContainer = (props) => {
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+  }
   return (
     <Form
       className="d-flex justify-content-end"
       autoComplete="off"
+      onSubmit={onSubmitHandler}
     >
       <FormControl
         type="search"
