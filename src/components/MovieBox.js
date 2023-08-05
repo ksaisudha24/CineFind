@@ -15,7 +15,7 @@ const MovieBox = (props) => {
         <img
           className="card-img-top"
           src={API_IMG + props.movieDetails.poster_path}
-          alt="Movie Poster"
+          alt={props.movieDetails.title}
         />
         <div className="card-body">
           <button type="button" className="btn btn-outline-light" onClick={handleShow}>

@@ -20,8 +20,10 @@ const MovieDetailsModal = (props) => {
         },
       });
       let cast = [];
-      for (let i = 0; i < 5; i++)
-        cast.push(response.data.credits.cast[i].name);
+      for (let i = 0; i < 5; i++) {
+        if (response.data.credits.cast[i])
+          cast.push(response.data.credits.cast[i].name);
+      }
       setMovieCredits(cast);
     }
     credits();
@@ -37,13 +39,13 @@ const MovieDetailsModal = (props) => {
           className="card-img-top"
           style={{ width: "14rem" }}
           src={API_IMG + movieDetails.poster_path}
-          alt="Movie Poster"
+          alt={movieDetails.title}
         />
         <h3>{movieDetails.title}</h3>
         <h5>IMDb: {movieDetails.vote_average}</h5>
         <h5>Release Date: {movieDetails.release_date}</h5>
         <p>{movieDetails.overview}</p>
-        <h5> Cast: </h5>
+        {castDisplay.length > 0 && <h5> Cast: </h5>}
         <div>{castDisplay}</div>
       </Modal.Body>
       <Modal.Footer>
