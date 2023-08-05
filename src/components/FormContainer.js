@@ -14,7 +14,7 @@ const FormContainer = (props) => {
     >
       <FormControl
         type="search"
-        placeholder="Enter Movie name or genre to search"
+        placeholder="Enter Movie name or genre"
         className="me-2"
         aria-label="search"
         name="query"
