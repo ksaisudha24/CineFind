@@ -9,6 +9,7 @@ import NavigationBar from "./components/NavigationBar";
 import "./styles/App.css";
 
 const BACKEND_URL = "https://cinefind.onrender.com";
+// const BACKEND_URL = "http://localhost:5000";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -44,6 +45,7 @@ function App() {
   }, [currentPage, query]);
 
   const changeHandler = (e) => {
+    setCurrentPage(1);
     setQuery(e.target.value);
   };
 

@@ -59,6 +59,19 @@ app.get('/api/search', async (req, res) => {
   }
 });
 
+// To fetch credits
+app.get("/api/credits", async(req, res) => {
+  try {
+    const movie_id = req.query.id;
+    const response = await axios.get(
+      `https://api.themoviedb.org/3/movie/${movie_id}?api_key=${process.env.TMDB_API_KEY}&language=en-US&append_to_response=credits`
+    );
+    res.json(response.data);
+  } catch(error) {
+    res.status(500).json({error: "Cannot fetch credits"});
+  }
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
